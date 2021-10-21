@@ -10,20 +10,26 @@ namespace Lab4._1
     {
         static void Main(string[] args)
         {
-            int N, i, Sum;
+            Double N, i, S;
             Console.Write("Введите число N = ");
             N = Convert.ToInt32(Console.ReadLine());
-            Sum = 0;
-            for (i = 1; i <= N; i++);
-            {
+            S = Math.Pow(N, 2) - 2 * N + 1; 
+            for (i = S; i <= N; i += S);
+            {                
+
                 if (N > 0)
-                {
-                    Sum = 2 * i - 1;
-                    Console.WriteLine("Квадрат числа {0} равен {1}", Sum, Sum * Sum);
+                {                    
+                    Console.WriteLine("Квадрат числа {0} равен {1}", N, i+ (2 * N - 1));
                 }
-              Console.ReadKey();
+                else
+                {
+                    Console.WriteLine("Ошибка!!!");
+                    return;
+                }
+
+                Console.ReadKey();
             }
-            
+
 
         }
     }
