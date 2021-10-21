@@ -20,16 +20,16 @@ namespace Lab4._1
                 if (N > 0)
                 {                    
                     Console.WriteLine("Квадрат числа {0} равен {1}", N, i+ (2 * N - 1));
+                    N--;
+                    Console.ReadKey();
                 }
-                else
+                else 
                 {
                     Console.WriteLine("Ошибка!!!");
                     return;
                 }
-
-                Console.ReadKey();
+                
             }
-
 
         }
     }
